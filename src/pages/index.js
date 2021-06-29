@@ -54,14 +54,8 @@ const getMarkdown = (page, fragmentId, isMarkdown = false, assets = false) => {
 const renderPage = (page, { isDesktop }) => (
   <GridContainer isDesktop={isDesktop}>
     <Part gridColumn={"2 / -2"}>
-      <div>
-        {/* dado 1 */}
-        {getMarkdown(page, "ckaippmyg0e2e0179awvtehcd", true)}
-      </div>
-      <Teste>
-        {/* dado 2 */}
-        {getMarkdown(page, "ckaiq6mu80e5v0177avyyr0px", true)}
-      </Teste>
+      <div>{getMarkdown(page, "ckaippmyg0e2e0179awvtehcd", true)}</div>
+      <Teste>{getMarkdown(page, "ckaiq6mu80e5v0177avyyr0px", true)}</Teste>
       {/* <StaticImage 
         src="images/gatsby-astronaut.png" 
         width={400}
