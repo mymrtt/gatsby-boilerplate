@@ -62,7 +62,11 @@ const renderPage = (page, { isDesktop }) => (
         {/* dado 2 */}
         {getMarkdown(page, "ckaiq6mu80e5v0177avyyr0px", true)}
       </Teste>
-      {/* <StaticImage src="images/gatsby-astronaut.png" width={400} formats: [AUTO, WEBP] /> */}
+      {/* <StaticImage 
+        src="images/gatsby-astronaut.png" 
+        width={400}
+        formats={"auto", "webp"}
+      /> */}
     </Part>
   </GridContainer>
 );
