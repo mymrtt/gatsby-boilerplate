@@ -25,7 +25,7 @@ const Part = styled.div`
   grid-column: ${(props) => props.gridColumn};
 `;
 
-const Teste = styled.div`
+const ContainerContent = styled.div`
   width: 100%;
 
   @media ${device.laptop} {
@@ -54,8 +54,10 @@ const getMarkdown = (page, fragmentId, isMarkdown = false, assets = false) => {
 const renderPage = (page, { isDesktop }) => (
   <GridContainer isDesktop={isDesktop}>
     <Part gridColumn={"2 / -2"}>
-      <div>{getMarkdown(page, "ckaippmyg0e2e0179awvtehcd", true)}</div>
-      <Teste>{getMarkdown(page, "ckaiq6mu80e5v0177avyyr0px", true)}</Teste>
+      <ContainerContent>
+        <span>{getMarkdown(page, "ckaippmyg0e2e0179awvtehcd", true)}</span>
+        <span>{getMarkdown(page, "ckaiq6mu80e5v0177avyyr0px", true)}</span>
+      </ContainerContent>
       {/* <StaticImage 
         src="images/gatsby-astronaut.png" 
         width={400}
